@@ -1,0 +1,40 @@
+@font-face{
+  font-family: 'Title';
+  src: url('./assets/fonts/Title.ttf');
+ }
+
+@font-face{
+  font-family: 'AppleKid';
+  src: url('./assets/fonts/AppleKid.woff');
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+:root {
+  font-family: Title;
+  letter-spacing: 8px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: white;
+  background: black;
+  font-synthesis: none;
+}
+
+h1{
+  font-size: 30rem;
+  margin: 0;
+}
+
+button{
+  font-family: AppleKid;
+  background: black;
+  border: white 5px ridge;
+  padding: 2rem;
+  font-size: 10rem;
+}

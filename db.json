@@ -1,0 +1,84 @@
+{"enemies": [
+    {
+        "id": 1,
+        "name": "Mighty Bear",
+        "health": 5,
+        "damage": 1,
+        "hit_rate": 0.5,
+        "crit_rate": 0,
+        "image": "./asset/sprites/MightyBear.png"
+    },
+    {
+        "id": 2,
+        "name": "Territorial Oak",
+        "health": 15,
+        "damage": 2,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+    {
+        "id": 0,
+        "name": "n/a",
+        "health": 0,
+        "damage": 0,
+        "hit_rate": 0,
+        "crit_rate": 0
+    },
+
+]}
