@@ -1,84 +1,166 @@
-{"enemies": [
-    {
+{
+  "character": {
+    "id": 1,
+    "name": "Ness",
+    "fav_food": "Steak",
+    "max_hp": 10,
+    "current_hp": 10,
+    "max_pp": 10,
+    "current_pp": 10,
+    "dmg": 2,
+    "hit_rate": 0.8,
+    "crit_rate": 0.1,
+    "items": [
+      {
         "id": 1,
-        "name": "Mighty Bear",
-        "health": 5,
-        "damage": 1,
-        "hit_rate": 0.5,
-        "crit_rate": 0,
-        "image": "./asset/sprites/MightyBear.png"
-    },
-    {
+        "name": "Steak",
+        "desc": "Restores 5 HP",
+        "flavor_desc": "Your favorite!",
+        "hp_increase": 5,
+        "pp_increase": 0
+      },
+      {
         "id": 2,
-        "name": "Territorial Oak",
-        "health": 15,
-        "damage": 2,
-        "hit_rate": 0,
-        "crit_rate": 0
+        "name": "Bottle of Water",
+        "desc": "Restores 5 PP",
+        "flavor_desc": "Refreshing!",
+        "hp_increase": 0,
+        "pp_increase": 5
+      }
+    ]
+  },
+  "shop": {
+    "dialogue": [
+      {
+        "id": 1,
+        "text": "What can I do ya for?"
+      },
+      {
+        "id": 2,
+        "text": "I love you <3"
+      },
+      {
+        "id": 3,
+        "text": "Okay stop talking to me."
+      },
+      {
+        "id": 4,
+        "text": "Just buy something."
+      },
+      {
+        "id": 5,
+        "text": "Uhhhhhh"
+      }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "name": "Steak",
+        "desc": "Restores 5 HP",
+        "flavor_desc": "Your favorite!",
+        "hp_increase": 5,
+        "pp_increase": 0
+      },
+      {
+        "id": 2,
+        "name": "Bottle of Water",
+        "desc": "Restores 5 PP",
+        "flavor_desc": "Refreshing!",
+        "hp_increase": 0,
+        "pp_increase": 5
+      }
+    ]
+  },
+  "enemies": [
+    {
+      "id": 1,
+      "name": "Mighty Bear",
+      "hp": 5,
+      "dmg": 1,
+      "hit_rate": 0.5,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/mighty-bear.png"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 2,
+      "name": "Territorial Oak",
+      "hp": 15,
+      "dmg": 2,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/territorial-oak.gif"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 3,
+      "name": "Tough Guy",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/tough-guy.gif"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 4,
+      "name": "Frank",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/clumsy-robot.gif"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 5,
+      "name": "Enraged Fire Plug",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/enraged-fire-plug.gif"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 6,
+      "name": "Starman",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/starman.gif"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 7,
+      "name": "Big Pile of Puke",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/big-pile-of-puke.gif"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 8,
+      "name": "Kiss of Death",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/kiss-of-death.gif"
     },
     {
-        "id": 0,
-        "name": "n/a",
-        "health": 0,
-        "damage": 0,
-        "hit_rate": 0,
-        "crit_rate": 0
+      "id": 9,
+      "name": "Ego Orb",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/ego-orb.gif"
     },
-
-]}
+    {
+      "id": 10,
+      "name": "Sans",
+      "hp": 0,
+      "dmg": 0,
+      "hit_rate": 0,
+      "crit_rate": 0,
+      "image": "/src/assets/sprites/sans.png"
+    }
+  ]
+}

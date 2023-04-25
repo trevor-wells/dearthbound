@@ -1,12 +1,13 @@
-export default function TitleScreen(){
+import { Link } from "react-router-dom"
+import ReactAudioPlayer from "react-audio-player"
 
-    function handleClick(){
-        
-    }
+
+export default function TitleScreen(){
     return(
-    <div>
-        <h1>DEARTHBOUND</h1>
-        <button onClick={handleClick} className="pixel">PLAY</button>
+    <div className="title-screen">
+        <ReactAudioPlayer src="/src/assets/audio/music/TitleMusic.mp3" autoPlay loop volume={0.3}/>
+        <h1 className="game-title">DEARTHBOUND</h1>
+        <Link to="/character"><button className="nes-btn">PLAY</button></Link>
     </div>
     )
 }

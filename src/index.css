@@ -4,22 +4,33 @@
 
 @font-face{
   font-family: 'Title';
-  src: url('./assets/fonts/Title.ttf');
+  src: url('/src/assets/fonts/Title.ttf');
  }
 
 @font-face{
   font-family: 'AppleKid';
-  src: url('./assets/fonts/AppleKid.woff');
+  src: url('/src/assets/fonts/AppleKid.woff');
+}
+
+Link {
+  font-size: 10rem;
 }
 
 html, body {
+  font-family: AppleKid;
+  color: white;
   margin: 0;
-  height: 100%;
-  overflow: hidden
+  height: 100vh;
+  overflow: hidden;
+  background: #212529;
+}
+
+#pls{
+  padding: 10rem;
 }
 
 :root {
-  font-family: Title;
+  font-family: AppleKid;
   letter-spacing: 8px;
   line-height: 1.5;
   font-weight: 400;
@@ -37,15 +48,8 @@ html, body {
   text-align: center;
 }
 
-h1{
+.game-title{
+  font-family: Title;
+  color: white;
   font-size: 30rem;
-  margin: 0;
-}
-
-button{
-  font-family: AppleKid;
-  background: black;
-  border: white 5px ridge;
-  padding: 2rem;
-  font-size: 10rem;
 }
