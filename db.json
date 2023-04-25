@@ -79,7 +79,9 @@
       "dmg": 1,
       "hit_rate": 0.5,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/mighty-bear.png"
+      "image": "/src/assets/sprites/mighty-bear.png",
+      "music": "/src/assets/audio/music/weak-opponent.mp3",
+      "is_alive": false
     },
     {
       "id": 2,
@@ -88,7 +90,9 @@
       "dmg": 2,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/territorial-oak.gif"
+      "image": "/src/assets/sprites/territorial-oak.gif",
+      "music": "/src/assets/audio/music/mobile-opponent.mp3",
+      "is_alive": false
     },
     {
       "id": 3,
@@ -97,7 +101,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/tough-guy.gif"
+      "image": "/src/assets/sprites/tough-guy.gif",
+      "music": "/src/assets/audio/music/weird-opponent.mp3",
+      "is_alive": true
     },
     {
       "id": 4,
@@ -106,7 +112,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/clumsy-robot.gif"
+      "image": "/src/assets/sprites/clumsy-robot.gif",
+      "music": "/src/assets/audio/music/frank-theme.mp3",
+      "is_alive": true
     },
     {
       "id": 5,
@@ -115,7 +123,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enraged-fire-plug.gif"
+      "image": "/src/assets/sprites/enraged-fire-plug.gif",
+      "music": "/src/assets/audio/music/unsettling-opponent.mp3",
+      "is_alive": true
     },
     {
       "id": 6,
@@ -124,7 +134,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/starman.gif"
+      "image": "/src/assets/sprites/starman.gif",
+      "music": "/src/assets/audio/music/other-worldly-foe.mp3",
+      "is_alive": true
     },
     {
       "id": 7,
@@ -133,7 +145,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/big-pile-of-puke.gif"
+      "image": "/src/assets/sprites/big-pile-of-puke.gif",
+      "music": "/src/assets/audio/music/belch.mp3",
+      "is_alive": true
     },
     {
       "id": 8,
@@ -142,7 +156,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/kiss-of-death.gif"
+      "image": "/src/assets/sprites/kiss-of-death.gif",
+      "music": "/src/assets/audio/music/sanctuary-guardian.mp3",
+      "is_alive": true
     },
     {
       "id": 9,
@@ -151,7 +167,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/ego-orb.gif"
+      "image": "/src/assets/sprites/ego-orb.gif",
+      "music": "/src/assets/audio/music/pokey-means-business.mp3",
+      "is_alive": true
     },
     {
       "id": 10,
@@ -160,7 +178,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/sans.png"
+      "image": "/src/assets/sprites/sans.png",
+      "music": "/src/assets/audio/music/megalovania.mp3",
+      "is_alive": true
     }
   ]
 }

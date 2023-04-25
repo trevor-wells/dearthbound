@@ -1,11 +1,16 @@
+import ReactAudioPlayer from "react-audio-player"
+
 export default function Enemy({enemy}){
-    const {id, name, hp, damage, image} = enemy
+    const {id, name, hp, damage, image, music} = enemy
 
     return(
-        <div className="nes-container is-dark">
-            <h1>{name}</h1>
-            <h2>Health: {hp}</h2>
-            <img style={{height: "50px"}} src={image} alt={name}/>
+        <div className="fixed left-1/2 bottom-1/2">
+            <ReactAudioPlayer src={music} autoplay/>
+            <img
+                className="enemy"
+                src={image}
+                alt={name}
+            />
         </div>
     )
 }

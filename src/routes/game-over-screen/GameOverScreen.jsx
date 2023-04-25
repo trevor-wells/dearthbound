@@ -5,7 +5,7 @@ export default function GameOverScreen(){
     return(
         <div>
             <ReactAudioPlayer
-                src="/src/assets/audio/music/Win.mp3"
+                src="/src/assets/audio/music/you-win.mp3"
                 autoPlay
             />
             <h1>GAME OVER</h1>
