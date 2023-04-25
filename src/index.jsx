@@ -6,11 +6,10 @@ import TitleScreen from "/src/routes/title-screen/TitleScreen"
 import ErrorPage from "/src/routes/error-screen/ErrorScreen"
 import FightScreen, {loader as fightScreenLoader} from "/src/routes/fight-screen/FightScreen"
 import CharacterScreen, {loader as characterScreenLoader, action as characterPatchAction} from "/src/routes/character-screen/CharacterScreen"
-import ShopScreen from "/src/routes/shop-screen/ShopScreen"
+import ShopScreen, {loader as shopScreenLoader, action as shopScreenAction} from "/src/routes/shop-screen/ShopScreen"
 import GameOverScreen from "/src/routes/game-over-screen/GameOverScreen"
-import 'nes.css/css/nes.css'
+import '/src/nes.css'
 import '/src/index.css'
-
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route element={<App />} errorElement={<ErrorPage />}>
@@ -32,6 +31,8 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route
       path="/shop"
       element={<ShopScreen />}
+      loader={shopScreenLoader}
+      action={shopScreenAction}
     />
     <Route
       path="/game-over"

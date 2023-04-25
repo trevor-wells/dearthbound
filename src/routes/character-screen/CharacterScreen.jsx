@@ -7,7 +7,7 @@ export default function CharacterScreen(){
     const character = useLoaderData()
 
     return(
-        <div>
+        <div id="character-screen">
             <ReactAudioPlayer src="/src/assets/audio/music/character-screen.mp3" autoPlay loop />
             <div className="nes-container is-dark with-title">
                 <p className="title">Character Creation</p>

@@ -1,16 +1,19 @@
-import {Link, Form} from "react-router-dom"
+import {Link, Form, useLoaderData} from "react-router-dom"
 import ReactAudioPlayer from "react-audio-player"
+import {getShop} from "/src/util/api"
 
 export default function ShopScreen(){
+    const shop = useLoaderData()
     return(
         <div id="shop-screen">
             <ReactAudioPlayer src="/src/assets/audio/music/shop-screen.mp3" autoPlay loop />
-            <Link to="/fight"><button className="nes-btn fixed bottom-0 left-0">Fight</button></Link>
+            
             <div id="shop-dialogue" className="nes-container is-dark fixed">
-                <p>Hello there!</p>
+                <p>{shop.dialogue[2].text}</p>
             </div>
+            <Link to="/fight"><button>Exit</button></Link>
             <div id="shop-options" className="nes-container is-dark fixed">
-                <Form action="/shop">
+                <Form method="get" action="/shop">
                     <label>
                         <input type="radio" value="Bash" className="nes-radio"/>
                         <span>Buy</span>
@@ -25,15 +28,18 @@ export default function ShopScreen(){
                     </label>
                     <label>
                         <input type="radio" value="PSI" className="nes-radio"/>
-                        <span>Exit</span>
                     </label>
-                    <input type="submit"/>
+                    <button>Submit</button>
                 </Form>
             </div>
         </div>
     )
 }
 
+export function loader(){
+    return getShop()
+}
+
 export function action(){
-    
+    console.log("submitted!")
 }

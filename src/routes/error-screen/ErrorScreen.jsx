@@ -7,7 +7,7 @@ export default function ErrorPage() {
 
 return (
   <div id="error-page">
-    <ReactAudioPlayer src="/src/assets/audio/music/Error.mp3" autoPlay loop/>
+    <ReactAudioPlayer src="/src/assets/audio/music/error-screen.mp3" autoPlay loop/>
     <h1>UH OH</h1>
     <Link to="/"><button>GO BACK HOME</button></Link>
     <p>

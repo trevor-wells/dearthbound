@@ -8,7 +8,8 @@ export default function FightScreen(){
     
     
     return(
-        <div className="flex items-center">
+        <div id="fight-screen" className="flex items-center">
+            <video id="fight-screen-background" src="/src/assets/backgrounds/frank.mp4" muted autoPlay loop/>
             <div>
                 <Enemy enemy={enemyToDisplay}/>
                 <Link to="/shop"><button className="nes-btn fixed bottom-0 left-0">GO TO SHOP</button></Link>
