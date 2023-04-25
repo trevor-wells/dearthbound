@@ -2,7 +2,7 @@
   "character": {
     "id": 1,
     "name": "Trevor",
-    "fav_food": "Steak",
+    "fav_food": "Sushi",
     "max_hp": 10,
     "current_hp": 10,
     "max_pp": 10,
