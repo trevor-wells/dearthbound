@@ -9,28 +9,33 @@ export default function CharacterScreen(){
     return(
         <div id="character-screen">
             <ReactAudioPlayer src="/src/assets/audio/music/character-screen.mp3" autoPlay loop />
-            <div className="nes-container is-dark with-title">
-                <p className="title">Character Creation</p>
-                <h1>Hi {character.name}</h1>
-                <h1><br/>Your Favorite Food Is {character.fav_food}</h1>
-            </div>
             <Form method="patch" action="/character">
-                <label>Name</label>
-                <input
-                    type="text"
-                    name="name"
-                    className="nes-input is-dark"
-                />
-                <label>Favorite Food</label>
-                <input
-                    type="text"
-                    name="fav_food"
-                    className="nes-input is-dark"
-                />
-                <button className="nes-btn">Submit</button>
+                <img id="character-sprite" src="/src/assets/sprites/character.png" alt="character"/>
+                <div id="character-name" className="nes-container is-dark">
+                    <input id="name-input" type="text" name="name" maxlength={6}/>
+                </div>
+                <div id="fav-food" className="nes-container is-dark">
+                    <label>Favorite Food</label>
+                    <input id="fav-food-input" type="text" name="fav_food"/>
+                </div>
+                <div id="coolest-thing" className="nes-container is-dark">
+                    <label>Coolest Thing</label>
+                    <input id="coolest-thing-input" type="text" name="coolest_thing"/>
+                </div>
+                <div id="are-you-sure" className="nes-container is-dark">
+                    <h1>Are You Sure?</h1>
+                    <label>
+                        <input type="radio" value="Pray" className="nes-radio"/>
+                        <span>Yep</span>
+                    </label>
+                    <label>
+                        <input type="radio" value="Pray" className="nes-radio"/>
+                        <span>Nope</span>
+                    </label>
+                </div>
+                <input type="submit" style={{display: "none"}}/>
             </Form>
-            <Link to="/fight"><button className="nes-btn" id="pls">Fight</button></Link>
-            <Link to="/shop"><button className="nes-btn">Go to Shop</button></Link>
+            <video id="character-screen-background" src="/src/assets/backgrounds/character-screen.mp4" muted autoPlay loop/>
         </div>
     )
 }

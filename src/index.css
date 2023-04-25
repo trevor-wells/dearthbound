@@ -25,6 +25,16 @@ button {
   margin: 20px;
 }
 
+input {
+  background: black;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 :root {
   font-family: AppleKid;
   letter-spacing: 8px;
@@ -60,17 +70,16 @@ button {
   width: 100vw;
 }
 
-#character-screen {
-  background: url(/src/assets/backgrounds/character-screen.jpeg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
-
 #fight-screen-background {
   height: 100vh;
   width: 100vw;
 }
+
+#character-screen-background {
+  height: 100vh;
+  width: 100vw;
+}
+
 #shop-dialogue {
   position: absolute;
   left: 12.103174603174603vw;
@@ -85,4 +94,48 @@ button {
   width: 24.33862433862434vw;
   height: 48.49884526558891vh;
   bottom: 0px;
+}
+
+#character-sprite {
+  position: fixed;
+  width: 20vw;
+  bottom: 60vh;
+  left: 5vw;
+}
+
+#character-name {
+  position: fixed;
+  width: 20vw;
+  bottom: 60vh;
+  left: 25vw;
+}
+
+#name-input {
+  width: 16vw;
+}
+#fav-food {
+  position: fixed;
+  width: 40vw;
+  left: 50vw;
+  bottom: 60vh;
+}
+
+#fav-food-input {
+  width: 30vw;
+}
+
+#coolest-thing {
+  position: fixed;
+  width: 40vw;
+  left: 50vw;
+  bottom: 30vh;
+}
+
+#coolest-thing-input {
+  width: 30vw;
+}
+#are-you-sure {
+  position: fixed;
+  bottom: 5vh;
+  left: 30vw;
 }
