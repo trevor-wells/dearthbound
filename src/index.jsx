@@ -1,40 +1,49 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from "react-router-dom"
+import { getCharacter, getShop, getEnemies } from "/src/util/gets"
 import App from '/src/App'
 import TitleScreen from "/src/routes/title-screen/TitleScreen"
-import ErrorPage from "/src/routes/error-screen/ErrorScreen"
-import FightScreen, {loader as fightScreenLoader} from "/src/routes/fight-screen/FightScreen"
-import CharacterScreen, {loader as characterScreenLoader, action as characterPatchAction} from "/src/routes/character-screen/CharacterScreen"
-import ShopScreen, {loader as shopScreenLoader, action as shopScreenAction} from "/src/routes/shop-screen/ShopScreen"
+import ErrorScreen from "/src/routes/error-screen/ErrorScreen"
+import FightScreen from "/src/routes/fight-screen/FightScreen"
+import CharacterScreen, { action as characterPatchAction } from "/src/routes/character-screen/CharacterScreen"
+import ShopScreen from "/src/routes/shop-screen/ShopScreen"
 import GameOverScreen from "/src/routes/game-over-screen/GameOverScreen"
 import '/src/nes.css'
 import '/src/index.css'
 
 const router = createBrowserRouter(createRoutesFromElements(
-  <Route element={<App />} errorElement={<ErrorPage />}>
+  <Route
+    id="root"
+    element={<App />}
+    errorElement={<ErrorScreen />}
+    loader={getCharacter}
+  >
     <Route
+      id="title"
       path="/"
       element={<TitleScreen />}
     />
     <Route
+      id="character"
       path="/character"
       element={<CharacterScreen />}
-      loader={characterScreenLoader}
       action={characterPatchAction}
     />
     <Route
+      id="fight"
       path="/fight"
       element={<FightScreen />}
-      loader={fightScreenLoader}
+      loader={getEnemies}
     />
     <Route
+      id="shop"
       path="/shop"
       element={<ShopScreen />}
-      loader={shopScreenLoader}
-      action={shopScreenAction}
+      loader={getShop}
     />
     <Route
+      id="game-over"
       path="/game-over"
       element={<GameOverScreen />}
     />

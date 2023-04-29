@@ -1,15 +1,45 @@
 {
   "character": {
     "id": 1,
-    "name": "Trevor",
-    "fav_food": "Sushi",
-    "max_hp": 10,
-    "current_hp": 10,
-    "max_pp": 10,
-    "current_pp": 10,
-    "dmg": 2,
+    "name": "Alex",
+    "fav_food": "Ramen",
+    "favorite_thing": "Astro",
+    "max_hp": 100,
+    "current_hp": 100,
+    "max_pp": 100,
+    "current_pp": 100,
+    "dmg": 20,
     "hit_rate": 0.8,
-    "crit_rate": 0.1,
+    "crit_rate": 0.2,
+    "current_sprite": "3",
+    "has_visited_shop": false,
+    "sprites": [
+      {
+        "id": 1,
+        "url": "/src/assets/sprites/character/ness.png",
+        "dead_url": "/src/assets/sprites/character/ness-dead.png"
+      },
+      {
+        "id": 2,
+        "url": "/src/assets/sprites/character/lucas.png",
+        "dead_url": "/src/assets/sprites/character/lucas-dead.png"
+      },
+      {
+        "id": 3,
+        "url": "/src/assets/sprites/character/frisk.png",
+        "dead_url": "/src/assets/sprites/character/frisk-dead.png"
+      },
+      {
+        "id": 4,
+        "url": "/src/assets/sprites/character/link.png",
+        "dead_url": "/src/assets/sprites/character/link-dead.png"
+      },
+      {
+        "id": 5,
+        "url": "/src/assets/sprites/character/hollow-knight.png",
+        "dead_url": "/src/assets/sprites/character/hollow-knight-dead.png"
+      }
+    ],
     "items": [
       {
         "id": 1,
@@ -33,23 +63,27 @@
     "dialogue": [
       {
         "id": 1,
-        "text": "What can I do ya for?"
+        "text": "The name's Cohiba. Dark Cohiba. What can I do ya for?"
       },
       {
         "id": 2,
-        "text": "I love you <3"
+        "text": "Wouldn't it be great if I actually had some sort of purpose?"
       },
       {
         "id": 3,
-        "text": "Okay stop talking to me."
+        "text": "At least the shop screen looks pretty..."
       },
       {
         "id": 4,
-        "text": "Just buy something."
+        "text": "Okay please leave now."
       },
       {
         "id": 5,
-        "text": "Uhhhhhh"
+        "text": "..."
+      },
+      {
+        "id": 6,
+        "text": "I have nothing else to say to you."
       }
     ],
     "items": [
@@ -75,112 +109,184 @@
     {
       "id": 1,
       "name": "Mighty Bear",
-      "hp": 5,
-      "dmg": 1,
+      "hp": 50,
+      "dmg": 10,
       "hit_rate": 0.5,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/mighty-bear.png",
+      "image": "/src/assets/sprites/enemies/mighty-bear.png",
       "music": "/src/assets/audio/music/weak-opponent.mp3",
-      "is_alive": false
+      "background": "/src/assets/backgrounds/enemy-background-1.mp4",
+      "description": "Somebody ate her porridge, and she isn't too happy about it!",
+      "death_text": "Mighty Bear went back into hibernation.",
+      "is_alive": true
     },
     {
       "id": 2,
       "name": "Territorial Oak",
-      "hp": 15,
-      "dmg": 2,
-      "hit_rate": 0,
+      "hp": 100,
+      "dmg": 10,
+      "hit_rate": 0.6,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/territorial-oak.gif",
+      "image": "/src/assets/sprites/enemies/territorial-oak.gif",
       "music": "/src/assets/audio/music/mobile-opponent.mp3",
-      "is_alive": false
+      "background": "/src/assets/backgrounds/enemy-background-2.mp4",
+      "description": "Not quite an ent. More like a whomping willow.",
+      "death_text": "Territorial Oak saw the merits in sharing.",
+      "is_alive": true
     },
     {
       "id": 3,
       "name": "Tough Guy",
-      "hp": 0,
-      "dmg": 0,
-      "hit_rate": 0,
-      "crit_rate": 0,
-      "image": "/src/assets/sprites/tough-guy.gif",
+      "hp": 100,
+      "dmg": 10,
+      "hit_rate": 0.5,
+      "crit_rate": 0.3,
+      "image": "/src/assets/sprites/enemies/tough-guy.gif",
       "music": "/src/assets/audio/music/weird-opponent.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-3.mp4",
+      "description": "He appears to be flipping you the bird. Are you gonna take that?",
+      "death_text": "Tough Guy peed his pants.",
       "is_alive": true
     },
     {
       "id": 4,
       "name": "Frank",
-      "hp": 0,
-      "dmg": 0,
-      "hit_rate": 0,
+      "hp": 100,
+      "dmg": 20,
+      "hit_rate": 0.6,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/clumsy-robot.gif",
+      "image": "/src/assets/sprites/enemies/frank.png",
       "music": "/src/assets/audio/music/frank-theme.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-4.mp4",
+      "death_text": "Frank shrank.",
+      "description": "Yep, that's Frank.",
       "is_alive": true
     },
     {
       "id": 5,
       "name": "Enraged Fire Plug",
-      "hp": 0,
-      "dmg": 0,
-      "hit_rate": 0,
+      "hp": 100,
+      "dmg": 30,
+      "hit_rate": 0.25,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enraged-fire-plug.gif",
+      "image": "/src/assets/sprites/enemies/enraged-fire-plug.gif",
       "music": "/src/assets/audio/music/unsettling-opponent.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-5.mp4",
+      "death_text": "Enraged Fire Plug became inanimate.",
+      "description": "It's about to spew!",
       "is_alive": true
     },
     {
       "id": 6,
       "name": "Starman",
-      "hp": 0,
+      "hp": 100,
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/starman.gif",
+      "image": "/src/assets/sprites/enemies/starman.gif",
       "music": "/src/assets/audio/music/other-worldly-foe.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-6.mp4",
+      "description": "He'd like to come and meet us, but he thinks he'd blow our minds.",
+      "death_text": "Starman turned into a Starboy.",
       "is_alive": true
     },
     {
       "id": 7,
       "name": "Big Pile of Puke",
-      "hp": 0,
-      "dmg": 0,
-      "hit_rate": 0,
+      "hp": 150,
+      "dmg": 10,
+      "hit_rate": 0.5,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/big-pile-of-puke.gif",
+      "image": "/src/assets/sprites/enemies/big-pile-of-puke.gif",
       "music": "/src/assets/audio/music/belch.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-7.mp4",
+      "death_text": "Big Pile of Puke got mopped up.",
+      "description": "....... Yuck.",
       "is_alive": true
     },
     {
       "id": 8,
       "name": "Kiss of Death",
-      "hp": 0,
-      "dmg": 0,
-      "hit_rate": 0,
+      "hp": 100,
+      "dmg": 100,
+      "hit_rate": 0.01,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/kiss-of-death.gif",
+      "image": "/src/assets/sprites/enemies/kiss-of-death.gif",
       "music": "/src/assets/audio/music/sanctuary-guardian.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-8.mp4",
+      "death_text": "Kiss of Death contracted mononucleosis.",
+      "description": "Mwah!",
       "is_alive": true
     },
     {
       "id": 9,
       "name": "Ego Orb",
-      "hp": 0,
-      "dmg": 0,
+      "hp": 150,
+      "dmg": "ego",
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/ego-orb.gif",
+      "image": "/src/assets/sprites/enemies/ego-orb.gif",
       "music": "/src/assets/audio/music/pokey-means-business.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-9.mp4",
+      "death_text": "Ego Orb experienced Ego Death.",
+      "description": "It peers deep into your soul.",
       "is_alive": true
     },
     {
       "id": 10,
       "name": "Sans",
-      "hp": 0,
-      "dmg": 0,
-      "hit_rate": 0,
-      "crit_rate": 0,
-      "image": "/src/assets/sprites/sans.png",
+      "hp": 10000,
+      "dmg": 50,
+      "hit_rate": 1,
+      "crit_rate": 1,
+      "image": "/src/assets/sprites/enemies/sans.png",
       "music": "/src/assets/audio/music/megalovania.mp3",
+      "background": "/src/assets/backgrounds/enemy-background-10.mp4",
+      "death_text": "What the fuck? How?",
+      "description": "Uh oh.",
       "is_alive": true
+    }
+  ],
+  "graveyard": [
+    {
+      "name": "Luke",
+      "sprite": "1",
+      "id": 1
+    },
+    {
+      "name": "Link",
+      "sprite": "3",
+      "id": 2
+    },
+    {
+      "name": "Test",
+      "sprite": "0",
+      "id": 3
+    },
+    {
+      "name": "Ness",
+      "sprite": "0",
+      "id": 4
+    },
+    {
+      "name": "",
+      "sprite": "0",
+      "id": 6
+    },
+    {
+      "name": "Greg",
+      "sprite": "4",
+      "id": 8
+    },
+    {
+      "name": "Alex",
+      "sprite": "3",
+      "id": 9
+    },
+    {
+      "name": "Alex",
+      "sprite": "3",
+      "id": 10
     }
   ]
 }

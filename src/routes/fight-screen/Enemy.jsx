@@ -4,9 +4,10 @@ export default function Enemy({enemy}){
     const {id, name, hp, damage, image, music} = enemy
 
     return(
-        <div className="fixed left-1/2 bottom-1/2">
+        <div>
             <ReactAudioPlayer src={music} autoplay/>
             <img
+                id="enemy-sprite"
                 className="enemy"
                 src={image}
                 alt={name}
