@@ -1,9 +1,9 @@
 {
   "character": {
     "id": 1,
-    "name": "Alex",
-    "fav_food": "Ramen",
-    "favorite_thing": "Astro",
+    "name": "Ness",
+    "fav_food": "Steak",
+    "favorite_thing": "Rockin",
     "max_hp": 100,
     "current_hp": 100,
     "max_pp": 100,
@@ -11,7 +11,7 @@
     "dmg": 20,
     "hit_rate": 0.8,
     "crit_rate": 0.2,
-    "current_sprite": "3",
+    "current_sprite": "0",
     "has_visited_shop": false,
     "sprites": [
       {
@@ -287,6 +287,56 @@
       "name": "Alex",
       "sprite": "3",
       "id": 10
+    },
+    {
+      "name": "Frisk",
+      "sprite": "2",
+      "id": 11
+    },
+    {
+      "name": "Frisk",
+      "sprite": "2",
+      "id": 12
+    },
+    {
+      "name": "Ness",
+      "sprite": "0",
+      "id": 13
+    },
+    {
+      "name": "Ness",
+      "sprite": "0",
+      "id": 14
+    },
+    {
+      "name": "Chessma",
+      "sprite": "2",
+      "id": 15
+    },
+    {
+      "name": "Chessma",
+      "sprite": "2",
+      "id": 16
+    },
+    {
+      "name": "sans",
+      "sprite": "0",
+      "id": 17
+    },
+    {
+      "name": "sans",
+      "sprite": "0",
+      "id": 18
+    },
+    {
+      "name": "Ness",
+      "sprite": "0",
+      "id": 19
+    },
+    {
+      "name": "Ness",
+      "sprite": "0",
+      "id": 20
     }
   ]
 }
