@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from "react-router-dom"
 import { getCharacter, getShop, getEnemies } from "/src/util/gets"
 import App from '/src/App'
-import TitleScreen from "/src/routes/title-screen/TitleScreen"
-import ErrorScreen from "/src/routes/error-screen/ErrorScreen"
-import FightScreen from "/src/routes/fight-screen/FightScreen"
-import CharacterScreen, { action as characterPatchAction } from "/src/routes/character-screen/CharacterScreen"
-import ShopScreen from "/src/routes/shop-screen/ShopScreen"
-import GameOverScreen from "/src/routes/game-over-screen/GameOverScreen"
+import TitleScreen from "/src/routes/titleScreen/TitleScreen"
+import ErrorScreen from "/src/routes/errorScreen/ErrorScreen"
+import FightScreen from "/src/routes/fightScreen/FightScreen"
+import CharacterScreen, { action as characterPatchAction } from "/src/routes/characterScreen/CharacterScreen"
+import ShopScreen from "/src/routes/shopScreen/ShopScreen"
+import GameOverScreen from "/src/routes/gameOverScreen/GameOverScreen"
 import '/src/nes.css'
 import '/src/index.css'
 

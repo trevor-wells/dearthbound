@@ -233,7 +233,7 @@ fieldset:disabled {
 
 
 #shop-screen {
-  background: url(/src/assets/backgrounds/shop-screen.png) no-repeat center center fixed;
+  background: url(/src/assets/backgrounds/shopScreen.png) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -274,7 +274,7 @@ fieldset:disabled {
 
 
 #game-over-screen {
-  background: url(/src/assets/backgrounds/game-over.jpeg) no-repeat center center fixed;
+  background: url(/src/assets/backgrounds/gameOver.jpeg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;

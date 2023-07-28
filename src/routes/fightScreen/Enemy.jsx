@@ -5,7 +5,8 @@ export default function Enemy({enemy}){
 
     return(
         <div>
-            <ReactAudioPlayer src={music} autoplay/>
+            {/* FIXME */}
+            <ReactAudioPlayer src={music} autoplay muted/>
             <img
                 id="enemy-sprite"
                 className="enemy"

@@ -1,9 +1,9 @@
 {
   "character": {
     "id": 1,
-    "name": "Ness",
-    "fav_food": "Steak",
-    "favorite_thing": "Rockin",
+    "name": "",
+    "fav_food": "",
+    "favorite_thing": "",
     "max_hp": 100,
     "current_hp": 100,
     "max_pp": 100,
@@ -17,27 +17,27 @@
       {
         "id": 1,
         "url": "/src/assets/sprites/character/ness.png",
-        "dead_url": "/src/assets/sprites/character/ness-dead.png"
+        "dead_url": "/src/assets/sprites/character/nessDead.png"
       },
       {
         "id": 2,
         "url": "/src/assets/sprites/character/lucas.png",
-        "dead_url": "/src/assets/sprites/character/lucas-dead.png"
+        "dead_url": "/src/assets/sprites/character/lucasDead.png"
       },
       {
         "id": 3,
         "url": "/src/assets/sprites/character/frisk.png",
-        "dead_url": "/src/assets/sprites/character/frisk-dead.png"
+        "dead_url": "/src/assets/sprites/character/friskDead.png"
       },
       {
         "id": 4,
         "url": "/src/assets/sprites/character/link.png",
-        "dead_url": "/src/assets/sprites/character/link-dead.png"
+        "dead_url": "/src/assets/sprites/character/linkDead.png"
       },
       {
         "id": 5,
-        "url": "/src/assets/sprites/character/hollow-knight.png",
-        "dead_url": "/src/assets/sprites/character/hollow-knight-dead.png"
+        "url": "/src/assets/sprites/character/hollowKnight.png",
+        "dead_url": "/src/assets/sprites/character/hollowKnightDead.png"
       }
     ],
     "items": [
@@ -113,9 +113,9 @@
       "dmg": 10,
       "hit_rate": 0.5,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enemies/mighty-bear.png",
-      "music": "/src/assets/audio/music/weak-opponent.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-1.mp4",
+      "image": "/src/assets/sprites/enemies/mightyBear.png",
+      "music": "/src/assets/audio/music/weakOpponent.mp3",
+      "background": "/src/assets/backgrounds/enemyBg1.mp4",
       "description": "Somebody ate her porridge, and she isn't too happy about it!",
       "death_text": "Mighty Bear went back into hibernation.",
       "is_alive": true
@@ -127,9 +127,9 @@
       "dmg": 10,
       "hit_rate": 0.6,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enemies/territorial-oak.gif",
-      "music": "/src/assets/audio/music/mobile-opponent.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-2.mp4",
+      "image": "/src/assets/sprites/enemies/territorialOak.gif",
+      "music": "/src/assets/audio/music/mobileOpponent.mp3",
+      "background": "/src/assets/backgrounds/enemyBg2.mp4",
       "description": "Not quite an ent. More like a whomping willow.",
       "death_text": "Territorial Oak saw the merits in sharing.",
       "is_alive": true
@@ -141,9 +141,9 @@
       "dmg": 10,
       "hit_rate": 0.5,
       "crit_rate": 0.3,
-      "image": "/src/assets/sprites/enemies/tough-guy.gif",
-      "music": "/src/assets/audio/music/weird-opponent.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-3.mp4",
+      "image": "/src/assets/sprites/enemies/toughGuy.gif",
+      "music": "/src/assets/audio/music/weirdOpponent.mp3",
+      "background": "/src/assets/backgrounds/enemyBg3.mp4",
       "description": "He appears to be flipping you the bird. Are you gonna take that?",
       "death_text": "Tough Guy peed his pants.",
       "is_alive": true
@@ -156,8 +156,8 @@
       "hit_rate": 0.6,
       "crit_rate": 0,
       "image": "/src/assets/sprites/enemies/frank.png",
-      "music": "/src/assets/audio/music/frank-theme.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-4.mp4",
+      "music": "/src/assets/audio/music/frankTheme.mp3",
+      "background": "/src/assets/backgrounds/enemyBg4.mp4",
       "death_text": "Frank shrank.",
       "description": "Yep, that's Frank.",
       "is_alive": true
@@ -169,9 +169,9 @@
       "dmg": 30,
       "hit_rate": 0.25,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enemies/enraged-fire-plug.gif",
-      "music": "/src/assets/audio/music/unsettling-opponent.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-5.mp4",
+      "image": "/src/assets/sprites/enemies/enragedFirePlug.gif",
+      "music": "/src/assets/audio/music/unsettlingOpponent.mp3",
+      "background": "/src/assets/backgrounds/enemyBg5.mp4",
       "death_text": "Enraged Fire Plug became inanimate.",
       "description": "It's about to spew!",
       "is_alive": true
@@ -183,9 +183,9 @@
       "dmg": 0,
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enemies/starman.gif",
-      "music": "/src/assets/audio/music/other-worldly-foe.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-6.mp4",
+      "image": "/src/assets/sprites/enemies/StarMan.gif",
+      "music": "/src/assets/audio/music/otherWorldlyFoe.mp3",
+      "background": "/src/assets/backgrounds/enemyBg6.mp4",
       "description": "He'd like to come and meet us, but he thinks he'd blow our minds.",
       "death_text": "Starman turned into a Starboy.",
       "is_alive": true
@@ -197,9 +197,9 @@
       "dmg": 10,
       "hit_rate": 0.5,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enemies/big-pile-of-puke.gif",
+      "image": "/src/assets/sprites/enemies/bigPileOfPuke.gif",
       "music": "/src/assets/audio/music/belch.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-7.mp4",
+      "background": "/src/assets/backgrounds/enemyBg7.mp4",
       "death_text": "Big Pile of Puke got mopped up.",
       "description": "....... Yuck.",
       "is_alive": true
@@ -211,9 +211,9 @@
       "dmg": 100,
       "hit_rate": 0.01,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enemies/kiss-of-death.gif",
-      "music": "/src/assets/audio/music/sanctuary-guardian.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-8.mp4",
+      "image": "/src/assets/sprites/enemies/kissOfDeath.gif",
+      "music": "/src/assets/audio/music/sanctuaryGuardian.mp3",
+      "background": "/src/assets/backgrounds/enemyBg8.mp4",
       "death_text": "Kiss of Death contracted mononucleosis.",
       "description": "Mwah!",
       "is_alive": true
@@ -225,9 +225,9 @@
       "dmg": "ego",
       "hit_rate": 0,
       "crit_rate": 0,
-      "image": "/src/assets/sprites/enemies/ego-orb.gif",
-      "music": "/src/assets/audio/music/pokey-means-business.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-9.mp4",
+      "image": "/src/assets/sprites/enemies/egoOrb.gif",
+      "music": "/src/assets/audio/music/pokeyMeansBusiness.mp3",
+      "background": "/src/assets/backgrounds/enemyBg9.mp4",
       "death_text": "Ego Orb experienced Ego Death.",
       "description": "It peers deep into your soul.",
       "is_alive": true
@@ -241,7 +241,7 @@
       "crit_rate": 1,
       "image": "/src/assets/sprites/enemies/sans.png",
       "music": "/src/assets/audio/music/megalovania.mp3",
-      "background": "/src/assets/backgrounds/enemy-background-10.mp4",
+      "background": "/src/assets/backgrounds/enemyBg10.mp4",
       "death_text": "What the fuck? How?",
       "description": "Uh oh.",
       "is_alive": true
@@ -337,6 +337,26 @@
       "name": "Ness",
       "sprite": "0",
       "id": 20
+    },
+    {
+      "name": "",
+      "sprite": "1",
+      "id": 21
+    },
+    {
+      "name": "",
+      "sprite": "1",
+      "id": 22
+    },
+    {
+      "name": "",
+      "sprite": "0",
+      "id": 23
+    },
+    {
+      "name": "",
+      "sprite": "0",
+      "id": 24
     }
   ]
 }

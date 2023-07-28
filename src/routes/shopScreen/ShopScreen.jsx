@@ -40,7 +40,8 @@ export default function ShopScreen(){
 
     return(
         <div id="shop-screen">
-            <audio src="/src/assets/audio/music/shop-screen.mp3" autoPlay loop />
+            {/* FIXME */}
+            <audio src="/src/assets/audio/music/shopScreen.mp3" autoPlay loop muted />
             
             <div id="shop-dialogue" className="nes-container is-dark fixed is-rounded">
                 <p id="shop-text">{textContent}</p>

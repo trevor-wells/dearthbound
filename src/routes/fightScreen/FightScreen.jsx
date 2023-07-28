@@ -40,7 +40,7 @@ export default function FightScreen(){
     return(
         <div id="fight-screen" className="flex items-center">
 
-            <audio src={enemy.music} autoPlay loop />
+            <audio src={enemy.music} autoPlay loop muted />
 
             <video id="fight-screen-background" src={enemy.background} muted autoPlay loop/>
 

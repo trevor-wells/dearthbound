@@ -17,8 +17,9 @@ export default function CharacterScreen(){
 
     return(
         <div id="character-screen">
-            <video id="character-screen-background" src="/src/assets/backgrounds/character-screen.mp4" muted autoPlay loop/>
-            <audio src="/src/assets/audio/music/character-screen.mp3" autoPlay loop />
+            <video id="character-screen-background" src="/src/assets/backgrounds/characterScreen.mp4" muted autoPlay loop/>
+            {/* FIXME */}
+            <audio src="/src/assets/audio/music/characterScreen.mp3" autoPlay loop muted/>
             <Form method="patch" action="/character">
                 <input readOnly type="text" value={index} style={{display: "none"}} name="current_sprite"/>
                 <CharacterSprite handleClick={changeSprite} sprite={character.sprites[index].url}/>
