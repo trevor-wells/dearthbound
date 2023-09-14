@@ -1,54 +1,54 @@
-# **DearthBound**
+# **dearthbound**
 
-A simple clone of the turn-based combat system in the 1995 Japanese role-playing game *EarthBound* (released in Japan as *Mother 2*).
+a simple clone of the turn-based combat system in the 1995 japanese role-playing game *earthbound* (released in japan as *mother 2*)
 
-## **Installation**
+## **installation**
 
-To set up the app on your local machine, type the following into the terminal:
+to set up the app on your local machine, type the following into the terminal:
 
 ```
 npm install
 npm run server
 ```
 
-Open another terminal window, then type:
+open another terminal window, then type:
 
 ```
 npm run dev
 o
 ```
 
-## **How to Play**
+## **how to play**
 
-You will face ten different enemies in Dearthbound, each enemy more difficult than the last. You must defeat all ten enemies to win!
+you will face ten different enemies in dearthbound, each enemy more difficult than the last. you must defeat all ten enemies to win!
 
-### **Character Creation**
+### <ins>**character creation**</ins>
 
-Choose between different sprites by clicking on your character.
+choose between different sprites by clicking on your character.
 
-Enter your character's name, favorite food, and favorite thing.
+enter your character's name, favorite food, and favorite thing.
 
-Once you're ready, click "Yep"!
+once you're ready, click "yep"!
 
-### **Combat**
+### <ins>**combat**</ins>
 
-While in combat, you may choose between four different character actions:
+while in combat, you may choose between four different character actions:
 
-**Bash** - Swing at the enemy, dealing damage equal to the attack power of your weapon.
+**bash** - swing at the enemy, dealing damage equal to the attack power of your weapon.
 
-**PSI** - Use Psychic Points (PP) to perform a Psionic ability (PSI) on the enemy. Effects vary between abilities.
+**psi** - use psychic points (pp) to perform a psionic ability (psi) on the enemy. effects vary between abilities.
 
-**Goods** - Choose between items that may be used in various ways to aid you in battle. Your favorite food heals you, while water bottles restore your PP.
+**goods** - choose between items that may be used in various ways to aid you in battle. your favorite food heals you, while water bottles restore your pp.
 
-**Check** - Examine your opponent to discover details about their remaining health, abilities, and weaknesses.
+**check** - examine your opponent to discover details about their remaining health, abilities, and weaknesses.
 
-If you defeat your enemy, you will be awarded money and sent to the shop screen.
+if you defeat your enemy, you will be awarded money and sent to the shop screen.
 
-### **Shop**
+### <ins>**shop**</ins>
 
-In the shop screen, you can use the money earned from your battles to purchase helpful items. You may also sell unwanted items in order to afford better ones.
+in the shop screen, you can use the money earned from your battles to purchase helpful items. you may also sell unwanted items in order to afford better ones.
 
-## **Folder Structure**
+## **folder structure**
 ```
 .
 ├── node_modules
@@ -71,14 +71,12 @@ In the shop screen, you can use the money earned from your battles to purchase h
 │   │   ├── shop-screen
 │   │   └── title-screen
 │   ├── util
-│   ├── App.jsx
+│   ├── app.jsx
 │   ├── index.css
 │   ├── index.jsx
 │   └── nes.css
 ├── db.json
 ├── index.html
-├── package.json
-├── README.md
 └── ...
 ```
 
@@ -98,45 +96,41 @@ In the shop screen, you can use the money earned from your battles to purchase h
 
 • **routes** - contains react components representing different screens in the application
 
-• **util** - contains CRUD functions, as well as other common functions used throughout the app
+• **util** - contains crud functions, as well as other common functions used throughout the app
 
-• **App.jsx** - renders the app, consisting of all the routes defined in index.jsx
+• **app.jsx** - renders the app, consisting of all the routes defined in index.jsx
 
 • **index.css** - primary stylesheet for the app
 
-• **index.jsx** - defines the react routes used by App.jsx
+• **index.jsx** - defines the react routes used by app.jsx
 
-• **nes.css** - CSS library used heavily throughout project
+• **nes.css** - css library used heavily throughout project
 
-• **db.json** - JSON database file used to store game data
+• **db.json** - json database file used to store game data
 
-• **index.html** - HTML file that serves as entry point for app
+• **index.html** - html file that serves as entry point for app
 
-• **package.json** - holds metadata about project's dependencies, as well as scripts to manage project
+## **technologies used**
+• vite         (4.2.0)
 
-• **README.md** - file you are currently reading!
+• react        (18.2.0)
 
-## **Technologies Used**
-• Vite         (4.2.0)
+• react router (6.4.4)
 
-• React        (18.2.0)
+• typed.js     (2.0.15)
 
-• React Router (6.4.4)
+• tailwind css (3.3.1)
 
-• Typed.js     (2.0.15)
-
-• Tailwind CSS (3.3.1)
-
-## **Features**
+## **features**
 *insert key features here (client-side routing, talk about the logic used, typed library, etc)*
 
-## **Demo / Walkthrough**
+## **demo / walkthrough**
 *insert link to loom video with thumbnail here*
 
-## **License**
-DearthBound is available under the MIT license. See the LICENSE.txt file for more info.
+## **license**
+dearthbound is available under the mit license. see the license.txt file for more info.
 
-## **Contact Information**
-[GitHub](https://github.com/trevor-wells)
+## **contact information**
+[github](https://github.com/trevor-wells)
 
-[LinkedIn](https://www.linkedin.com/in/trevor-e-wells/)
+[linkedin](https://www.linkedin.com/in/trevor-e-wells/)
