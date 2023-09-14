@@ -4,7 +4,7 @@ a simple clone of the turn-based combat system in the 1995 japanese role-playing
 
 ## **installation**
 
-to set up the app on your local machine, type the following into the terminal:
+to set up the app on your local machine, navigate to the project folder in your terminal and type:
 
 ```
 npm install
